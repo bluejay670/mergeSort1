@@ -60,11 +60,19 @@ public class MergeSort1 {
         time = System.currentTimeMillis();
         isFound = linearSearch(nums, target);
         time = System.currentTimeMillis() - time;
+        
+        
 
         System.out.println("Search returned : " + isFound);
         System.out.println("Processing Time: " + time + "ms");
         System.out.println("loopCounter = " + loopCounter);
         System.out.println("comparisonCounter = " + comparisonCounter);
+        
+        System.out.println("\nThe sorted list is:");
+        for (int i = 0; i < arraySize; i++) {
+            System.out.println(nums[i]);
+        }
+        
         System.out.println("\n------------------------------------");
         loopCounter = 0;
         comparisonCounter = 0;
